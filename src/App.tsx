@@ -33,14 +33,15 @@ export default function App() {
           className={message.user === NAME ? "message-mine" : ""}
         >
           <div>{message.user}</div>
-
           <p>{message.body}</p>
-          <time className="text-bold">
-            {new Date(message.createdAt).toLocaleTimeString([], {
-              hour: "2-digit",
-              minute: "2-digit",
-            })}
-          </time>
+          <div className="message-footer">
+            <time>
+              {new Date(message.createdAt).toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+              })}
+            </time>
+          </div>
         </article>
       ))}
       <form
