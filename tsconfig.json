@@ -15,5 +15,11 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["./src", "./convex", "vite.config.mts"]
+  "include": [
+    "./src",
+    "./convex",
+    "vite.config.mts",
+    "tailwind.config.js", // Include Tailwind CSS config file
+    "postcss.config.js"   // Include PostCSS config file if applicable
+  ]
 }
